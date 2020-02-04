@@ -1,0 +1,29 @@
+#container {
+    width: 250px;
+    height: 200px;
+
+    background-color: whitesmoke;
+}
+
+.rectangle {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    
+    top: 85px;
+    left: 112px;
+
+    background-color: lightseagreen;
+
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    border-radius: 50%;
+    top: 120px;
+    left: 112 px;
+
+    background-color: aquamarine;
+}
