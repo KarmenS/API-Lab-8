@@ -2,16 +2,16 @@
     width: 250px;
     height: 200px;
 
-    background-color: whitesmoke;
+    background-color: pink;
 }
 
 .rectangle {
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
     position: relative;
     
-    top: 85px;
-    left: 112px;
+    top: 70px;
+    left: 100px;
 
     background-color: lightseagreen;
 
