@@ -5,7 +5,7 @@
     background-color: black;
 }
 
-.rectangle1 {
+.rectangle {
     width: 50px;
     height: 50px;
     position: relative;
@@ -16,89 +16,4 @@
     left: 10px;
 
     background-color: lightpink;
-}
-.rectangle2 {
-    width: 50px;
-    height: 50px;
-    position: relative;
-
-    margin: 10px; 
-
-    top: 10px;
-    left: 10px;
-
-    background-color: lightblue;
-}
-.rectangle3 {
-    width: 50px;
-    height: 50px;
-    position: relative;
-    
-    margin: 10px; 
-
-    top: 10px;
-    left: 10px;
-
-    background-color: lightgreen;
-}
-.rectangle4 {
-    width: 50px;
-    height: 50px;
-    position: relative;
-    
-    margin: 10px; 
-
-    top: 10px;
-    left: 10px;
-
-    background-color: lightyellow;
-}
-
-.triangle1{
-    width: 0;
-    height: 0;
-    border: solid 30px;
-    border-color: transparent transparent lightpink transparent;
-
-    margin: 10px; 
-
-    position: relative;
-    top: 10px;
-    left: 10px;
-}
-.triangle2{
-    width: 0;
-    height: 0;
-    border: solid 30px;
-    border-color: transparent transparent lightblue transparent;
-
-    margin: 10px; 
-
-    position: relative;
-    top: 10px;
-    left: 10px;
-}
-.triangle3{
-    width: 0;
-    height: 0;
-    border: solid 30px;
-    border-color: transparent transparent lightgreen transparent;
-
-    margin: 10px; 
-
-    position: relative;
-    top: 10px;
-    left: 10px;
-}
-.triangle4{
-    width: 0;
-    height: 0;
-    border: solid 30px;
-    border-color: transparent transparent lightyellow transparent;
-
-    margin: 10px; 
-
-    position: relative;
-    top: 10px;
-    left: 10px;
 }
