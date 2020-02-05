@@ -4,6 +4,7 @@ const { styler, spring, listen, pointer, value } = window.popmotion;
 const ball = document.getElementsByClassName("rectangle")[0];
 
 const divStyler = styler(ball);
+
 const ballXY = value({ x: 0, y: 0 }, divStyler.set);
 
 listen(ball, 'mousedown touchstart')
@@ -14,12 +15,5 @@ listen(ball, 'mousedown touchstart')
 
 listen(document, 'mouseup touchend')
   .start(() => {
-    spring({
-      from: ballXY.get(),
-      velocity: ballXY.getVelocity(),
-      to: { x: 0, y: 0 },
-      stiffness: 200,
-      // mass: 1,
-      // damping: 10
-    }).start(ballXY);
+    ballXY.stop();
   });
