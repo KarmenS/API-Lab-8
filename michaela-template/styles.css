@@ -8,7 +8,7 @@
 .rectangle {
     width: 25px;
     height: 25px;
-    position: relative;
+    position: absolute;
     
     top: 85px;
     left: 112px;
@@ -20,10 +20,10 @@
 .circle {
     width: 25px;
     height: 25px;
-    position: relative;
+    position: absolute;
     border-radius: 50%;
     top: 120px;
-    left: 112 px;
+    left: 112px;
 
     background-color: aquamarine;
 }

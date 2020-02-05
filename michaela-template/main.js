@@ -7,10 +7,11 @@ const circle = document.getElementsByClassName("circle")[0];
 const rectangleStyler = styler(rectangle); 
 const ballStyler = styler(circle); 
 
+let arrayOfElements = [rectangleStyler, ballStyler]
 
 tween({
-    from: { x: 0, scale: 1 },
-    to: { x: 300, scale: 2 },
+    from: { x: 0, y: 0, scale: 1 },
+    to: { x: 300, y: 250, scale: arrayOfElements.length },
     ease: easing.easeInOut,
     flip: Infinity,
     duration: 1000
@@ -18,7 +19,7 @@ tween({
 
   tween({
     from: { x: 0, scale: 1 },
-    to: { x: 450, scale: 3 },
+    to: { x: 450, scale: arrayOfElements.length + 1 },
     ease: easing.easeInOut,
     flip: Infinity,
     duration: 1500
