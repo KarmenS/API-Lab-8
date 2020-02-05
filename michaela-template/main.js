@@ -12,14 +12,18 @@ let arrayOfElements = [rectangleStyler, ballStyler]
 let mouseX;
 let mouseY;
 
-const rectangleY = rectangle.style.top
 
-console.log(rectangleY)
       
 
 let arrayOfPositions = [1000, 1000];
 
 console.log(arrayOfPositions);
+
+let rectangleTop = 0;
+let rectangleLeft = 0;
+
+
+
 
 function getMousePosition(event) {
     mouseX = event.clientX;
@@ -27,6 +31,7 @@ function getMousePosition(event) {
     for(let i = 0; i < 1; i++) {
       arrayOfPositions.push(mouseX, mouseY)
 
+    
       tween({
         from: { x: 0, y: 0, scale: 1 },
         to: { x: 300, y: 250, scale: arrayOfElements.length },
@@ -35,6 +40,19 @@ function getMousePosition(event) {
         duration: arrayOfPositions[0]
       }).start(v => rectangleStyler.set(v));
       
+      for(let i = 0; i < 2; i++) {
+        let rectangleStyle = getComputedStyle(rectangle)
+    
+        rectangleTop = Number(rectangleStyle.top[0] + rectangleStyle.top[1])
+        rectangleLeft = Number(rectangleStyle.left[0] + rectangleStyle.left[1])
+        
+        console.log(rectangleTop)
+        console.log(rectangleLeft)
+      }
+
+        
+
+        
       
 
       tween({

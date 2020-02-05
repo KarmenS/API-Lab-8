@@ -1,6 +1,14 @@
 //Same as: import {tween, styler} from 'popmotion'
 const { tween, styler, easing } = window.popmotion;
 
+/*
+const test = document.getElementById("test");
+
+const style = getComputedStyle(test)
+
+console.log(style.top)
+*/
+
 
 const circle01 = document.getElementsByClassName("circle")[0];
 const circle02 = document.getElementsByClassName("circle")[1];
@@ -27,6 +35,7 @@ const circleStyler09 = styler(circle09);
 const circleStyler10 = styler(circle10); 
 const circleStyler11 = styler(circle11); 
 const circleStyler12 = styler(circle12); 
+
 
 
 //for circle 1
