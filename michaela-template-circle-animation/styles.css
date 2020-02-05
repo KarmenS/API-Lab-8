@@ -7,8 +7,17 @@
 
 
 /*
-.circle01, .circle02, .circle03, .circle04, .circle05, 
-.circle06, .circle07, .circle08, .circle09, .circle10*/
+#test {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: red;
+    top: 60px;
+    left: 200px;
+}
+*/
+
 .circle {
     width: 20px;
     height: 20px;
@@ -21,6 +30,7 @@
 
 .circle02 {
     background-color: rgb(24, 142, 179);
+    top: 60px;
 }
 
 .circle03 {
