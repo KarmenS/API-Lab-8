@@ -2,7 +2,7 @@
 const { styler, spring, listen, pointer, value } = window.popmotion;
 
 // create rectangle 1
-const rectangle = document.getElementsByClassName("rectangle");
+const rectangle = document.getElementsByClassName("rectangle")[0];
 
 const divStyler = styler(rectangle);
 
