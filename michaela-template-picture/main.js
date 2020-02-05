@@ -29,7 +29,7 @@ const circleStyler11 = styler(circle11);
 const circleStyler12 = styler(circle12); 
 
 
-
+//for circle 1
 tween({
     from: { x: 0, y: 0, scale: 1 },
     to: { x: -245, y: 100,  scale: 2 },
@@ -38,22 +38,25 @@ tween({
     duration: 1500
 }).start(v => circleStyler01.set(v));
 
+//for circle 2
 tween({
   from: { x: 0, y: 0, scale: 1 },
-  to: { x: -185, y: 160,  scale: 2 },
+  to: { x: -155, y: 130,  scale: 2 },
   ease: easing.easeInOut,
   flip: Infinity,
   duration: 1500
 }).start(v => circleStyler02.set(v));
 
+//for circle 3
 tween({
   from: { x: 0, y: 0, scale: 1 },
-  to: { x: -125, y: 220,  scale: 2 },
+  to: { x: -95, y: 190,  scale: 2 },
   ease: easing.easeInOut,
   flip: Infinity,
   duration: 1500
 }).start(v => circleStyler03.set(v));
 
+//for circle 4
 tween({
   from: { x: 0, y: 0, scale: 1 },
   to: { x: -65, y: 280,  scale: 2 },
@@ -62,22 +65,25 @@ tween({
   duration: 1500
 }).start(v => circleStyler04.set(v));
 
+//for circle 5
 tween({
   from: { x: 0, y: 0, scale: 1 },
-  to: { x: -125, y: 340,  scale: 2 },
+  to: { x: -95, y: 370,  scale: 2 },
   ease: easing.easeInOut,
   flip: Infinity,
   duration: 1500
 }).start(v => circleStyler05.set(v));
 
+//for circle 6
 tween({
   from: { x: 0, y: 0, scale: 1 },
-  to: { x: -185, y: 400,  scale: 2 },
+  to: { x: -155, y: 430,  scale: 2 },
   ease: easing.easeInOut,
   flip: Infinity,
   duration: 1500
 }).start(v => circleStyler06.set(v));
 
+//for circle 7
 tween({
   from: { x: 0, y: 0, scale: 1 },
   to: { x: -245, y: 460,  scale: 2 },
@@ -86,22 +92,25 @@ tween({
   duration: 1500
 }).start(v => circleStyler07.set(v));
 
+//for circle 8
 tween({
   from: { x: 0, y: 0, scale: 1 },
-  to: { x: -305, y: 400,  scale: 2 },
+  to: { x: -335, y: 430,  scale: 2 },
   ease: easing.easeInOut,
   flip: Infinity,
   duration: 1500
 }).start(v => circleStyler08.set(v));
 
+//for circle 9
 tween({
   from: { x: 0, y: 0, scale: 1 },
-  to: { x: -365, y: 340,  scale: 2 },
+  to: { x: -395, y: 370,  scale: 2 },
   ease: easing.easeInOut,
   flip: Infinity,
   duration: 1500
 }).start(v => circleStyler09.set(v));
 
+//for circle 10
 tween({
   from: { x: 0, y: 0, scale: 1 },
   to: { x: -425, y: 280,  scale: 2 },
@@ -110,17 +119,19 @@ tween({
   duration: 1500
 }).start(v => circleStyler10.set(v));
 
+//for circle 11
 tween({
   from: { x: 0, y: 0, scale: 1 },
-  to: { x: -365, y: 220,  scale: 2 },
+  to: { x: -395, y: 190,  scale: 2 },
   ease: easing.easeInOut,
   flip: Infinity,
   duration: 1500
 }).start(v => circleStyler11.set(v));
 
+//for circle 12
 tween({
   from: { x: 0, y: 0, scale: 1 },
-  to: { x: -305, y: 160,  scale: 2 },
+  to: { x: -335, y: 130,  scale: 2 },
   ease: easing.easeInOut,
   flip: Infinity,
   duration: 1500
