@@ -1,0 +1,64 @@
+#container {
+    width: 650px;
+    height: 500px;
+
+    background-color: whitesmoke;
+}
+
+
+/*
+.circle01, .circle02, .circle03, .circle04, .circle05, 
+.circle06, .circle07, .circle08, .circle09, .circle10*/
+.circle {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #1898BE;
+    top: 60px;
+    left: 550px;
+}
+
+.circle02 {
+    background-color: rgb(24, 142, 179);
+}
+
+.circle03 {
+    background-color: rgb(21, 121, 151);
+}
+
+.circle04 {
+    background-color: rgb(23, 110, 136);
+}
+
+.circle05 {
+    background-color: rgb(25, 104, 128);
+}
+
+.circle06 {
+    background-color: rgb(39, 111, 124);
+}
+
+.circle07 {
+    background-color: rgb(43, 102, 112);
+}
+
+.circle08 {
+    background-color: rgb(53, 114, 124);
+}
+
+.circle09 {
+    background-color: rgb(71, 163, 177);
+}
+
+.circle10 {
+    background-color: rgb(73, 192, 211);
+}
+
+.circle11 {
+    background-color: rgb(58, 180, 228);
+}
+
+.circle12 {
+    background-color: rgb(58, 166, 228);
+}
