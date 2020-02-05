@@ -1,12 +1,19 @@
 //Same as: import {tween, styler} from 'popmotion'
-const { tween, styler } = window.popmotion;
+const { styler, spring, listen, pointer, value } = window.popmotion;
 
-const element = document.getElementsByClassName("rectangle")[0];
+const ball = document.getElementsByClassName("rectangle")[0];
 
-const ball = styler(element); 
+const divStyler = styler(ball);
 
-tween({to: 30, duration: 50 }).start(
-    function (value) { 
-        ball.set('x', value);
-    }
-    );
+const ballXY = value({ x: 0, y: 0 }, divStyler.set);
+
+listen(ball, 'mousedown touchstart')
+  .start((e) => {
+    e.preventDefault();
+    pointer(ballXY.get()).start(ballXY);
+  });
+
+listen(document, 'mouseup touchend')
+  .start(() => {
+    ballXY.stop();
+  });
