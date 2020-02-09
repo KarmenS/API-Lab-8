@@ -32,3 +32,26 @@
     border-style: solid;
     border-color: lightpink;
 }
+
+.triangle {
+    width: 0px;
+    height: 0px;
+    border: solid 30px;
+    border-color: transparent transparent lightpink transparent;
+    position: relative;
+    margin: 10px;
+    top: 10px;
+    left: 10px;
+    
+}
+
+.emptyTriangle{
+    width: 0px;
+    height: 0px;
+    border: solid 30px;
+    border-color: transparent transparent lightpink transparent;
+    position: relative;
+    margin: 10px; 
+    top: 10px;
+    left: 10px;
+}
