@@ -6,7 +6,7 @@
 }
 
 .rectangle {
-    width: 50px;
+    width: 80px;
     height: 50px;
     position: relative;
     
@@ -15,29 +15,16 @@
     top: 10px;
     left: 10px;
 
-    background-color: lightpink;
+    background-color: yellow;
 
-}
-
-.emptyRectangle {
-    width: 50px;
-    height: 50px;
-    position: relative;
-    
-    margin: 10px; 
-
-    top: 10px;
-    left: 10px;
-
-    border-style: solid;
-    border-color: lightpink;
 }
 
 .triangle {
     width: 0px;
     height: 0px;
-    border: solid 30px;
-    border-color: transparent transparent lightpink transparent;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 60px solid pink;
     position: relative;
     margin: 10px;
     top: 10px;
@@ -45,13 +32,38 @@
     
 }
 
-.emptyTriangle{
-    width: 0px;
-    height: 0px;
-    border: solid 30px;
-    border-color: transparent transparent lightpink transparent;
+.circle {
+    width: 50px;
+    height: 50px;
+    background: green;
+    border-radius: 50%;
     position: relative;
+    margin: 10px;
+    top: 10px;
+    left: 10px; 
+}
+
+.square{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    
     margin: 10px; 
+
+    top: 10px;
+    left: 10px;
+
+    background-color: orange;
+}
+
+.rightTriangle{
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-left: 80px solid blue;
+    border-bottom: 30px solid transparent;
+    position: relative;
+    margin: 10px;
     top: 10px;
     left: 10px;
 }
