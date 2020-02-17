@@ -4,7 +4,7 @@
     background-color: black;
 }
 
-.rectangle {
+.ball {
     width: 50px;
     height: 80px;
     position: relative;
@@ -14,48 +14,3 @@
     background-color: yellow;
 }
 
-.triangle {
-    width: 0px;
-    height: 0px;
-    border-left: 40px solid transparent;
-    border-right: 40px solid transparent;
-    border-bottom: 60px solid pink;
-    position: relative;
-    margin: 20px;
-    top: 10px;
-    left: 10px;
-    
-}
-
-.circle {
-    width: 50px;
-    height: 50px;
-    background: green;
-    border-radius: 50%;
-    position: relative;
-    margin: 20px;
-    top: 10px;
-    left: 10px; 
-}
-
-.square{
-    width: 50px;
-    height: 50px;
-    position: relative;
-    margin: 20px; 
-    top: 10px;
-    left: 10px;
-    background-color: orange;
-}
-
-.rightTriangle{
-    width: 0;
-    height: 0;
-    border-top: 30px solid transparent;
-    border-left: 80px solid blue;
-    border-bottom: 30px solid transparent;
-    position: relative;
-    margin: 20px;
-    top: 10px;
-    left: 10px;
-}
