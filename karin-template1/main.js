@@ -1,7 +1,7 @@
 //Same as: import {tween, styler} from 'popmotion'
 const { styler, spring, listen, pointer, value } = window.popmotion;
 
-// create rectangle 1
+// move rectangle 
 const rectangle = document.getElementsByClassName("rectangle")[0];
 
 const divStyler = styler(rectangle);
@@ -18,4 +18,3 @@ listen(document, 'mouseup touchend')
   .start(() => {
     rectangleXY.stop();
   });
-
