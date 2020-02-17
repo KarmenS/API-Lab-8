@@ -1,6 +1,17 @@
 //Same as: import {tween, styler} from 'popmotion'
-const { timeline } = window.popmotion;
+const { styler, spring, listen, pointer, value} = window.popmotion;
 
-const element = document.getElementsByClassName("popUp")[0];
+const inTheWay = document.getElementsByClassName("box");
+const divStyler = styler(InTheWay);
+const inTheWayXY = value({ x: 0, y: 0 }, divStyler.set);
 
-const popUp = styler(element); 
+listen(inTheWay, 'mousedown touchstart')
+  .start((e) => {
+    e.preventDefault();
+    pointer(inTheWayXY.get()).start(inTheWayXY);
+  });
+
+listen(document, 'mouseup touchend')
+  .start(() => {
+    inTheWayXY.stop();
+  });

@@ -1,22 +1,18 @@
-html,body {
-    margin:0;
-    background:white;
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    background: green;
+    height: 500px;
+ }
+ 
+.box {
+    background: lightgrey;
+    width: 200px;
+    padding: 20px;
 
 }
 
-.container {
-    width: 350px;
-    padding: 2em;
-    background:lightgrey;
-    border-radius: 8px;
-    margin: 10% auto;
-}
 
-.btn {
-    width:100%;
-    background:white;
-    color: black;
-    height: 30px;
-
-}
 
