@@ -9,6 +9,7 @@ const style = getComputedStyle(test)
 console.log(style.top)
 */
 
+const button = document.getElementsByClassName("button")[0];
 
 const circle01 = document.getElementsByClassName("circle")[0];
 const circle02 = document.getElementsByClassName("circle")[1];
@@ -37,6 +38,7 @@ const circleStyler11 = styler(circle11);
 const circleStyler12 = styler(circle12); 
 
 
+function allTheTweens(){
 
 //for circle 1
 function firstTween() {tween({
@@ -70,9 +72,10 @@ function stopTheAnimation() {
 */
 
 //for circle 2
+//width can be changed in the tween
 tween({
   from: { x: 0, y: 0, scale: 1 },
-  to: { x: -155, y: 130,  scale: 2 },
+  to: { x: -155, y: 130, scale: 2 },
   ease: easing.easeInOut,
   flip: Infinity,
   duration: 1500
@@ -167,4 +170,14 @@ tween({
   flip: Infinity,
   duration: 1500
 }).start(v => circleStyler12.set(v));
+}
+
+//
+
+
+function animate (event) {
+  allTheTweens();
   
+}
+
+button.addEventListener("click", animate)
