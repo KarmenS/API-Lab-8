@@ -13,10 +13,9 @@ body{
 }
 
 .rectangle {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     position: relative;
-    
     top: 60px;
     left: 112px;
 
@@ -25,8 +24,8 @@ body{
 }
 
 .another-rectangle{
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     position: relative;
     top: 180px;
     left: 112px;
@@ -34,9 +33,9 @@ body{
 }
 
 .circle{
-    width: 30px;
-    height: 30px;
-    border-radius: 200%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     position: relative;
     background-color: #FFF07A;
     top: 300px;

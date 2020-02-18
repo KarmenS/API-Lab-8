@@ -33,9 +33,9 @@ tween({
   keyframes({
     values: [
       { x: 0, y: 0, rotateY: 0, background: '#9B65DE' },
-      { x: 300, y: 0, rotateY: 180, rotateX: 0, background: '#14D790' },
-      { x: 300, y: 200, rotateY: 180, rotateX: 180, background: '#FF1C68' },
-      { x: 0, y: 200, rotateY: 0, rotateX: 180, background: '#198FE3' },
+      { x: 200, y: 0, rotateY: 180, rotateX: 0, background: '#14D790' },
+      { x: 200, y: 100, rotateY: 180, rotateX: 180, background: '#FF1C68' },
+      { x: 0, y: 150, rotateY: 0, rotateX: 180, background: '#198FE3' },
       { x: 0, y: 0, rotateY: 0, rotateX: 0, background: '#9B65DE' }
     ],
     duration: 3000,
