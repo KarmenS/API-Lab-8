@@ -1,11 +1,13 @@
 //Same as: import {tween, styler} from 'popmotion'
-const { tween, styler, easing } = window.popmotion;
+const { tween, styler, easing, keyframes } = window.popmotion;
 
-const element = document.getElementsByClassName("rectangle")[0];
+const rectangle = document.getElementsByClassName("rectangle")[0];
 const newElement = document.getElementsByClassName("another-rectangle")[0];
+const circle = document.getElementsByClassName("circle") [0];
 
-const rectangleStyler = styler(element); 
+const rectangleStyler = styler(rectangle); 
 const newRectangleStyler = styler (newElement);
+const circleStyler = styler(circle);
 
 tween({
     from: { x: 0, scale: 1 },
@@ -25,4 +27,19 @@ tween({
     // elapsed: 500,
     // loop: 5,
      yoyo: 5
-  }).start(newRectangleStyler.set);
+  }).start( v => newRectangleStyler.set(v));
+
+  
+  keyframes({
+    values: [
+      { x: 0, y: 0, rotateY: 0, background: '#9B65DE' },
+      { x: 300, y: 0, rotateY: 180, rotateX: 0, background: '#14D790' },
+      { x: 300, y: 200, rotateY: 180, rotateX: 180, background: '#FF1C68' },
+      { x: 0, y: 200, rotateY: 0, rotateX: 180, background: '#198FE3' },
+      { x: 0, y: 0, rotateY: 0, rotateX: 0, background: '#9B65DE' }
+    ],
+    duration: 3000,
+    easings: [easing.easeInOut, easing.easeInOut, easing.easeInOut, easing.easeInOut],
+    loop: Infinity,
+    //times: [0, 0.2, 0.5, 0.6, 1]
+  }).start(circleStyler.set);
