@@ -29,7 +29,7 @@ sentencePlayback.pause(0)
 
 const buttonPlayback = tween({
   from: { x: 0, y: 0, scale: 1, width: 90, height: 40},
-  to: { x: -80, y: -255,  scale: 1, width: 250, height: 220 },
+  to: { x: -80, y: -220,  scale: 1, width: 250, height: 185 },
   ease: easing.easeInOut,
   flip: Infinity,
   duration: 1500

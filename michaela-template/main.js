@@ -30,6 +30,7 @@ function getMousePosition(event) {
     mouseY = event.clientY;
     for(let i = 0; i < 1; i++) {
       arrayOfPositions.push(mouseX, mouseY)
+      
 
     
       tween({
