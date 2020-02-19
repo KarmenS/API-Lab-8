@@ -12,6 +12,7 @@ const ball3Styler = styler(ball3)
 
 const ballXY = value({ x: 20, y: 50 }, ballStyler.set);
 const ball2XY = value({ x: 50, y: 20 }, ball2Styler.set);
+const ball3XY = value({ x: 70, y: 10 }, ball3Styler.set);
 
 listen(ball, 'mousedown touchstart')
   .start((e) => {
@@ -49,9 +50,9 @@ listen(document, 'mouseup touchend')
 //ball 3
 spring({
     from: 0,
-    to: 200,
+    to: 300,
     velocity: ballXY.getVelocity(),
-    stiffness: 5,
-    damping: 0,
+    stiffness: 100,
+    damping: 5
   })
   .start(ball3Styler.set);
