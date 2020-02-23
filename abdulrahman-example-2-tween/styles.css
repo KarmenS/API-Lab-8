@@ -1,0 +1,14 @@
+.short {
+    position: absolute;
+    display: none;
+  }
+  
+  .long {
+    position: absolute;
+    display: none;
+  }
+  button {
+    position: absolute;
+    top: 91px;
+    left: 52px;
+  }
