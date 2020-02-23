@@ -66,16 +66,7 @@ body {
     padding-bottom: 5px;
     padding-right: 40px;
   
-    input {
-      color: #333;
-      font-size: 28px;
-      border: none;
-      font-family: 'PT Sans', sans-serif;
-  
-      &:focus {
-        outline: none;
-      }
-    }
+
     
     label {
       font-weight: bold;
