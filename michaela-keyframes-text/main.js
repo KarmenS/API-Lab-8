@@ -31,7 +31,7 @@ keyframes({
   values: [
     { color: '#FFCCEE' },
     { color: '#14D790' },
-    { color: '#DBFAF6' },
+    { color: '#166E75' },
     { color: '#198FE3' },
     {  color: '#FFCCEE' }
   ],
@@ -43,11 +43,11 @@ keyframes({
 
 const controlWord = keyframes({
   values: [
-    { x: 0, y: 0 },
-    { x: 680, y: -160 },
-    { x: 590, y: 135 },
-    { x: 730, y: -40 },
-    { x: 0, y: 0 }
+    { x: 0, y: 0, scale: 1 },
+    { x: 680, y: -160, scale: 2},
+    { x: 590, y: 135, scale: 1.8 },
+    { x: 730, y: -40, scale: 1.5 },
+    { x: 0, y: 0, scale: 1 }
   ],
   duration: 8000,
   easings: [easing.easeInOut, easing.easeInOut, easing.easeInOut, easing.easeInOut],
@@ -64,11 +64,11 @@ function moveWord() {
 
 const wordPosition = keyframes({
     values: [
-      { x: 0, y: 0 },
-      { x: 0, y: 0 },
-      { x: 0, y: 0 },
-      { x: 0, y: 0 },
-      { x: 0, y: 0 }
+      { x: 0, y: 0, scale: 1 },
+      { x: 0, y: 0, scale: 1 },
+      { x: 0, y: 0, scale: 1 },
+      { x: 0, y: 0, scale: 1  },
+      { x: 0, y: 0, scale: 1  }
     ],
     duration: 6000,
     easings: [easing.easeInOut, easing.easeInOut, easing.easeInOut, easing.easeInOut],
