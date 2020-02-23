@@ -11,23 +11,9 @@ body {
     display: flex;
     flex-direction: column;
   }
-  
+
   .pen {
     flex: 1 1 100%;
-  }
-  
-  .created-by {
-    flex: 0 0 50px;
-    background: #fff;
-    color: #222;
-    text-decoration: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 30px;
-  }
-  
-  .pen {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +27,4 @@ body {
     padding: 10px 40px 10px 10px;
     padding-bottom: 5px;
     padding-right: 40px;
-
-    
-
   }
