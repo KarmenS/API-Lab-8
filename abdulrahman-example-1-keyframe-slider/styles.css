@@ -1,0 +1,71 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: white;
+    overflow: hidden;
+  }
+  
+  .balls {
+    display: flex;
+    align-items: stretch;
+    height: 15px;
+    position: relative;
+  }
+  .balls .ball {
+    border-radius: 20%;
+    flex: 0 0 20px;
+    background: yellow;
+  }
+  .circle {
+    border-radius: 100%;
+    border: black solid 1px;
+    height: 300px;
+    width: 300px;
+  }
+  
+  .lefteye {
+    width: 20px;
+    height: 20px;
+    border: yellow 2px solid;
+    border-radius: 100%;
+    position: relative;
+    top: 80px;
+    left: 83px;
+    background-color: yellow;
+  }
+  
+  .righteye {
+    width: 20px;
+    height: 20px;
+    border:yellow 2px solid;
+    border-radius: 100%;
+    position: relative;
+    top: 56px;
+    left: 190px;
+    background-color: yellow;
+  }
+  
+  .carousel {
+    display: flex;
+    align-items: stretch;
+    height: 100px;
+    position: relative;
+    background: grey;
+    border-radius: 5px;
+    width: 300px;
+    margin-top: 30px;
+  }
+  .carousel .item {
+    background: #6dc1f9;
+    border-radius: 5px;
+    margin-right: 15px;
+    flex: 0 0 100px;
+  }
+  
+  .parag {
+    position: relative;
+    left: 90px;
+  }
