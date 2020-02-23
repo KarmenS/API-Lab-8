@@ -123,6 +123,8 @@ function disappearRectangle1() {
   rectangle1.style.opacity = "0";
 }
 
+// add a word that starts upside down and then rotates to the correct position
+
 /*keyframes({
     values: [
       { x: 0, y: 0, rotateY: 0, background: '#FFCCEE' },
