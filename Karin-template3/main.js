@@ -33,11 +33,23 @@ spring({
 .start(ImAMenu.set);
 
 
-/*listen(button, 'mousemove')
+listen(button, 'mouseover')
 .start(() => {
-    keyframes({
-        values: ['#14D790', '#198FE3', '#FF1C68', '#9B65DE', '#14D790'],
-        duration: 300,
-        loop: Infinity
-}).start(ImAButton)
-});*/
+    spring({
+    from: { scale: 1 },
+    to: { scale: 1.2 },
+  }).start(ImAButton.set)
+});
+
+listen(button, 'mouseout')
+.start(() => {
+    spring({
+    from: { scale: 1.2 },
+    to: { scale: 1 },
+  }).start(ImAButton.set)
+});
+
+
+
+
+
