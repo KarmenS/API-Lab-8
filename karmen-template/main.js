@@ -25,8 +25,8 @@ tween({
     ease: easing.backOut,
     flip: Infinity,
     // elapsed: 500,
-    // loop: 5,
-     yoyo: 5
+     //loop: 1,
+    // yoyo: 1
   }).start( v => newRectangleStyler.set(v));
 
   
