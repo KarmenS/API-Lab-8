@@ -1,0 +1,38 @@
+body {
+    --pink: #FF1C68;
+    --green: #14D790;
+    --blue: #198FE3;
+    --white: #fff;
+    background: var(--white);
+    font-family: 'PT Sans', sans-serif;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pen {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .input-container {
+    border: 2px solid var(--pink);
+    border-bottom: 3px solid var(--blue);
+    border-radius: 15px;
+    position: relative;
+    padding: 20px 80px 20px 40px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+  }
+
+  .user-name{
+    font-size: larger;
+  }
+
+.char{
+  
+}
