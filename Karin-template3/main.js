@@ -19,7 +19,6 @@ spring({
   .start(ImAForm.set);
 
 
-
 spring({
     from: { x: '800px', y: '0px' },
     to: { x: '500px', y: '100px' },
@@ -27,4 +26,12 @@ spring({
     damping: { x: 100, y: 100 }
 })
 .start(ImAMenu.set);
+
+listen(button, 'mousemove')
+.start(() => {
+(spring(
+    {from: '0px', to: '100px' }))
+.start(ImAButton.set)});
+
+
 
