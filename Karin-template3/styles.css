@@ -1,11 +1,11 @@
 body{
-    background-color: whitesmoke;
+    background-color: white;
     overflow: hidden;
 }
 .container {
     width: 265px;
     height: 320px;
-    background-color:palevioletred;
+    background-color:whitesmoke;
     border-radius: 25px;
     border: 2px solid black;
 
@@ -36,8 +36,7 @@ button{
     padding: 12px 20px;
     margin: 8px;
     border-radius: 4px;
-    background-color: black;
-    color: white;
+    background-color: #ff99cc;
     margin-left: 55px;
 }
 

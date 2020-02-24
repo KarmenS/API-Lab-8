@@ -1,5 +1,5 @@
 //Same as: import {tween, styler} from 'popmotion'
-const { styler, spring, listen, keyframes} = window.popmotion;
+const { styler, spring, listen} = window.popmotion;
 
 //get the elements from html
 const form = document.getElementsByClassName('container')[0];
@@ -37,18 +37,17 @@ listen(button, 'mouseover')
 .start(() => {
     spring({
     from: { scale: 1 },
-    to: { scale: 1.2 },
+    to: { scale: 1.2},
   }).start(ImAButton.set)
 });
 
 listen(button, 'mouseout')
 .start(() => {
     spring({
-    from: { scale: 1.2 },
+    from: { scale: 1.2},
     to: { scale: 1 },
   }).start(ImAButton.set)
 });
-
 
 
 
