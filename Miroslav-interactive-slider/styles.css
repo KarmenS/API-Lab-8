@@ -1,6 +1,6 @@
 #container {
-    width: 250px;
-    height: 200px;
+    width: 650px;
+    height: 500px;
 
     background-color: whitesmoke;
 }
@@ -8,11 +8,22 @@
 .rectangle {
     width: 25px;
     height: 25px;
-    position: relative;
+    position: absolute;
     
     top: 85px;
     left: 112px;
 
     background-color: lightseagreen;
 
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    border-radius: 50%;
+    top: 120px;
+    left: 112px;
+
+    background-color: aquamarine;
 }
