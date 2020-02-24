@@ -1,15 +1,19 @@
-.container {
-    width: 270px;
-    height: 320px;
+body{
     background-color: whitesmoke;
+    overflow: hidden;
+}
+.container {
+    width: 265px;
+    height: 320px;
+    background-color:grey;
     border-radius: 25px;
     border: 2px solid black;
 
 }
 
-h1 {
+.container h1 {
     font-size: 30px;
-    text-align: center;;
+    text-align: center;
 }
 
 input {
@@ -35,5 +39,11 @@ button{
     background-color: black;
     color: white;
     margin-left: 55px;
+
+}
+
+
+.menu h1{
+    font-size: 40px;
 
 }
