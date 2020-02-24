@@ -1,5 +1,5 @@
 //Same as: import {tween, styler} from 'popmotion'
-const { tween, styler, spring, value, transform, listen, valueTypes } = window.popmotion;
+const { tween, easing, styler, spring, value, transform, listen, valueTypes } = window.popmotion;
 const { blendColor, clamp, interpolate, pipe } = transform;
 
 // Select elements
@@ -9,30 +9,19 @@ const counter = document.querySelector('.input-container label');
 // Setup styler and scale `value`
 const counterStyler = styler(counter);
 const counterScale = value(1, counterStyler.set('scale'));
+const divStyler = styler(document.querySelector('.char'));
 
 //Gets the input field's max length
 const charLimit = parseInt(counter.innerHTML);
 
-// const fireSpring = () => spring({
-//     from: counterScale.get(),
-//     to: 1,
-//     velocity: 100,
-//     stiffness: 700,
-//     damping: 80,
-//   }).start(counterScale);
+
 function fireSpring() {
   spring({
     // Start the animation from the current scale:
     from: counterScale.get(),
-
-    // We want the spring to rest on 1
-    to: 0,
-
-    // We set the initial velocity to whichever the smallest is:
-    // a) counterScale's current velocity, or
-    // b) an arbitrary minimum. You can experiment.
+    // spring to rest on 1
+    to: 1,
     velocity: Math.max(counterScale.getVelocity(), 200),
-
     // This ratio of stiffness to damping gives a nice, tight spring. Experiment!
     stiffness: 700,
     damping: 80
@@ -48,6 +37,21 @@ function fireSpring() {
     // Use that number to blend grey and red
     blendColor(counterStyler.get('color'), '#f00')
   );
+
+//   //Function to vibrate character counter
+//   function springy(){
+//   tween({
+//     from: 0,
+//     to: { x: 1 },
+//     duration: 500,
+//     ease: easing.backOut,
+//     flip: Infinity,
+//     elapsed: 500,
+//   }).start(divStyler.set);
+// }
+// springy();
+
+
 
   const updateRemainingCharsCounter = (val) => {
     // Measure char count
@@ -67,4 +71,4 @@ function fireSpring() {
   listen(input, 'keyup')
     .pipe(({ target }) => target.value)
     .start(updateRemainingCharsCounter);
-    
+
