@@ -1,5 +1,5 @@
 //Same as: import {tween, styler} from 'popmotion'
-const { easing, keyframes, styler, transform } = window.popmotion;
+const { easing, keyframes, styler, transform, spring } = window.popmotion;
 
 const rectangle1 = document.getElementsByClassName("rectangle1")[0];
 const button = document.getElementsByClassName("button")[0];
@@ -7,6 +7,7 @@ const button1 = document.getElementsByClassName("button1")[0];
 const word = document.getElementsByClassName("word")[0];
 const word1 = document.getElementsByClassName("word1")[0];
 const h1 = document.getElementsByTagName("h1")[0];
+const text1 = document.getElementsByClassName("text1")[0];
 
 const buttonStyler = styler(button); 
 const buttonStyler1 = styler(button1); 
@@ -14,10 +15,16 @@ const rectangleStyler1 = styler(rectangle1);
 const wordStyler = styler(word);
 const wordStyler1 = styler(word1);
 const h1Styler = styler(h1);
+const textStyler1 = styler(text1)
 
+function enlargeText() {
+spring({
+  from: { x: 0, scale: 1 },
+  to: { x: 60, scale: 1.2 },
+}).start(textStyler1.set)
+}
 
-
-
+//The word is static, shown upside-down, only the color is changing
 keyframes({
   values: [
     { rotateY: 0, rotateX: 180, color: '#FFCCEE' },
@@ -32,6 +39,7 @@ keyframes({
   //times: [0, 0.2, 0.5, 0.6, 1]
 }).start(wordStyler1.set);
 
+//Rotating the word into a correct position and then back
 function wordToCorrectPosition() {
   const wordRotate = keyframes({
     values: [
@@ -47,10 +55,12 @@ function wordToCorrectPosition() {
     //times: [0, 0.2, 0.5, 0.6, 1]
   }).start(wordStyler1.set);
 
+  //Stopping the rotation at the right time
   function stopRotation() {
     wordRotate.stop(0)
   }
-
+  
+  //
   setTimeout(stopRotation, 6000)
   
 }
@@ -79,11 +89,11 @@ function highlightHeading1 () {
 
 const heading1 = keyframes({
   values: [
-    { x: 0, color: '#166E75', scale: 1 },
+    { x: 0, color: '#000000', scale: 1 },
     { x: 160, color: '#198FE3', scale: 1.8 },
     { x: 100, color: '#FFCCEE', scale: 1.5 },
-    { x: 160, color: '#198FE3', scale: 1.8 },
-    { x: 0, color: '#166E75', scale: 1 }
+    { x: 160, color: '#166E75', scale: 1.8 },
+    { x: 0, color: '#000000', scale: 1 }
   ],
   duration: 6000,
   easings: [easing.easeInOut, easing.easeInOut, easing.easeInOut, easing.easeInOut],
@@ -209,5 +219,6 @@ rectangle1.addEventListener("mouseover", highlightRectangle1)
 word.addEventListener("mouseover", moveWord)
 word1.addEventListener("mouseover", wordToCorrectPosition)
 h1.addEventListener("mouseover", highlightHeading1)
+text1.addEventListener("click", enlargeText)
 
 //buttonStyler1.addEventListener("")
