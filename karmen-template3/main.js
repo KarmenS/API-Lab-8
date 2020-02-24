@@ -36,7 +36,7 @@ tween({
   tween({
     from: 1600,
     to: 10,
-    duration: 6000
+    duration: 5000
 }).start(
     function (value) {
         rectangle_7.set('x', value);

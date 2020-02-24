@@ -99,8 +99,8 @@ rectangle_55
 .secondText{
     text-align: center;
     margin-top: 90px;
-    margin-left: 65px;
-    font-size: 15px;
+    margin-left: 45px;
+    font-size: 20px;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -111,7 +111,7 @@ rectangle_55
     text-align: center;
     margin-top: 90px;
     margin-left: 80px;
-    font-size: 15px;
+    font-size: 20px;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
