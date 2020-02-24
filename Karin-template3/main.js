@@ -1,5 +1,5 @@
 //Same as: import {tween, styler} from 'popmotion'
-const { styler, spring, listen, value, keyframes} = window.popmotion;
+const { styler, spring, listen, keyframes} = window.popmotion;
 
 //get the elements from html
 const form = document.getElementsByClassName('container')[0];
@@ -33,12 +33,11 @@ spring({
 .start(ImAMenu.set);
 
 
-listen(button, 'mousedown touchstart')
-.start(ImAButton.set)
+/*listen(button, 'mousemove')
+.start(() => {
     keyframes({
-        values: ['#FF0000', '#FFFF00'],
-    })
-.start(ImAButton.set);
-
-
-
+        values: ['#14D790', '#198FE3', '#FF1C68', '#9B65DE', '#14D790'],
+        duration: 300,
+        loop: Infinity
+}).start(ImAButton)
+});*/
