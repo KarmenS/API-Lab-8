@@ -22,7 +22,7 @@ function fireSpring() {
     // spring to rest on 1
     to: 1,
     velocity: Math.max(counterScale.getVelocity(), 200),
-    // This ratio of stiffness to damping gives a nice, tight spring. Experiment!
+    // Stiffness and damping controls the spring motion
     stiffness: 700,
     damping: 80
   }).start(counterScale);
@@ -34,7 +34,7 @@ function fireSpring() {
     // Map character count to a 0-1 range
     interpolate([charLimit * 0.5, charLimit], [0, 1]),
     
-    // Use that number to blend grey and red
+    // Blend black and green
     blendColor(counterStyler.get('color'), '#21c90e')
   );
 
