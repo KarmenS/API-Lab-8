@@ -9,9 +9,9 @@ const counter = document.querySelector('.input-container label');
 // Setup styler and scale `value`
 const counterStyler = styler(counter);
 const counterScale = value(1, counterStyler.set('scale'));
-const divStyler = styler(document.querySelector('.char'));
+/*const divStyler = styler(document.querySelector('.char'));*/
 
-//Gets the input field's max length
+//Gets the input field's max length, 10
 const charLimit = parseInt(counter.innerHTML);
 
 
@@ -35,24 +35,22 @@ function fireSpring() {
     interpolate([charLimit * 0.5, charLimit], [0, 1]),
     
     // Use that number to blend grey and red
-    blendColor(counterStyler.get('color'), '#f00')
+    blendColor(counterStyler.get('color'), '#21c90e')
   );
 
-//   //Function to vibrate character counter
-//   function springy(){
-//   tween({
-//     from: 0,
-//     to: { x: 1 },
-//     duration: 500,
-//     ease: easing.backOut,
-//     flip: Infinity,
-//     elapsed: 500,
-//   }).start(divStyler.set);
-// }
-// springy();
-
-
-
+  //Function to vibrate character counter
+ /* function springy(){
+  tween({
+    from: 0,
+    to: { x: 1 },
+    duration: 500,
+    ease: easing.backOut,
+    flip: Infinity,
+    elapsed: 500,
+  }).start(divStyler.set);
+}
+springy();
+*/
   const updateRemainingCharsCounter = (val) => {
     // Measure char count
     const charCount = val.length;
