@@ -3,19 +3,35 @@ const { styler, spring, listen, pointer, value} = window.popmotion;
 
 const form = document.getElementsByClassName('container')[0];
 const button = document.getElementsByTagName('button')[0];
+const menu = document.getElementsByClassName('menu')[0];
 
 const ImAForm = styler(form)
 const ImAButton = styler(button)
-
-const formXY = value({ x: 0, y: 0 }, ImAForm.set);
+const ImAMenu = styler(menu)
 
 spring({
-    from: 0,
-    to: 250,
-    velocity: formXY.getVelocity(),
-    stiffness: 5,
-    damping: 10,
+    from: { x: '0px', y: '0px' },
+    to: { x: '550px', y: '100px' },
+    stiffness: { x: 20, y: 100 },
+    damping: { x: 100, y: 100 }
+
   })
   .start(ImAForm.set);
+
+
+spring({
+    from: { x: '800px', y: '0px' },
+    to: { x: '500px', y: '100px' },
+    stiffness: { x: 20, y: 100 },
+    damping: { x: 100, y: 100 }
+})
+.start(ImAMenu.set);
+
+listen(button, 'mousemove')
+.start(() => {
+(spring(
+    {from: '0px', to: '100px' }))
+.start(ImAButton.set)});
+
 
 
