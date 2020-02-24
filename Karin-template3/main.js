@@ -27,10 +27,10 @@ spring({
 })
 .start(ImAMenu.set);
 
-listen(button, 'mousemove')
+listen(button, 'mousedown touchstart')
 .start(() => {
 (spring(
-    {from: '0px', to: '100px' }))
+    {from:'rgba(0, 200, 100, 1)', to: 'rgba(60, 100, 80, 0.5)'}))
 .start(ImAButton.set)});
 
 
