@@ -1,5 +1,5 @@
 //Same as: import {tween, styler} from 'popmotion'
-const { tween, styler, listen, pointer } = window.popmotion;
+const { tween, styler, listen, pointer, value, decay, physics, spring } = window.popmotion;
 
 const rectangleContainer= document.getElementsByClassName("rectangleContainer")[0];
 
@@ -16,25 +16,58 @@ const rectangle4Styler = styler(rectangle4);
 const rectangle5Styler = styler(rectangle5);
 
 
-let pointerTracker;
 
-function startTracking () {
-  pointerTracker = pointer({
+let pointerTracker
+
+function startTrackingIt () {
+ pointerTracker = pointer({
     x: rectangleStyler.get('x'),
     y: rectangleStyler.get('y')
   }).start(rectangleStyler.set);
 
 };
 
-
-
-function stopTracking () {
+function stopTrackingIt() {
   if (pointerTracker) pointerTracker.stop();
 };
 
-listen(rectangle, 'mousedown touchstart').start(startTracking);
-listen(rectangle, 'mouseup touchend').start(stopTracking);
+listen(rectangle, 'mousedown touchstart').start(startTrackingIt);
+listen(rectangle, 'mouseup touchend').start(stopTrackingIt); 
+
+listen(rectangle2, 'mousedown touchstart').start(startTracking);
+listen(rectangle2, 'mouseup touchend').start(stopTracking); 
 
 
+const ballXY = value({ x: 0, y: 0 },rectangle2Styler.set);
+
+function startTracking() {
+  pointer(ballXY.get())
+    .start(ballXY);
+}
+
+function stopTracking() {
+  decay({
+    from: ballXY.get(),
+    velocity: ballXY.getVelocity()
+  }).start(ballXY);
+}
 
 
+const ballArea = value({ x: 0, y: 0 }, rectangle3Styler.set);
+
+function startTrackingTheSpring() {
+  pointer(ballArea.get())
+    .start(ballArea);
+}
+
+function stopTrackingTheSpring() {
+  spring({
+    from: ballArea.get(),
+    velocity: ballArea.getVelocity(),
+    stiffness: 100,
+    damping: 10
+  }).start(ballArea);
+}
+
+listen(rectangle3, 'mousedown touchstart').start(startTrackingTheSpring);
+listen(rectangle3, 'mouseup touchend').start(stopTrackingTheSpring);
