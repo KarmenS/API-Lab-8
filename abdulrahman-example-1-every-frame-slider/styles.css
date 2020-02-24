@@ -17,7 +17,7 @@ body {
   .balls .ball {
     border-radius: 20%;
     flex: 0 0 20px;
-    background: yellow;
+    background: black;
   }
   .circle {
     border-radius: 100%;
@@ -29,23 +29,23 @@ body {
   .lefteye {
     width: 20px;
     height: 20px;
-    border: yellow 2px solid;
+    border: black 2px solid;
     border-radius: 100%;
     position: relative;
     top: 80px;
     left: 83px;
-    background-color: yellow;
+    background-color: black;
   }
   
   .righteye {
     width: 20px;
     height: 20px;
-    border:yellow 2px solid;
+    border:black 2px solid;
     border-radius: 100%;
     position: relative;
     top: 56px;
     left: 190px;
-    background-color: yellow;
+    background-color: black;
   }
   
   .carousel {
@@ -59,7 +59,7 @@ body {
     margin-top: 30px;
   }
   .carousel .item {
-    background: #6dc1f9;
+    background: darkgrey;
     border-radius: 5px;
     margin-right: 15px;
     flex: 0 0 100px;
@@ -67,5 +67,5 @@ body {
   
   .parag {
     position: relative;
-    left: 90px;
+    left: 80px;
   }
