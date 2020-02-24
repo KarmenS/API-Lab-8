@@ -55,6 +55,13 @@ h3 {
     position: absolute;
     left: 300px;
     top: 513px;
+    z-index: 10;
+}
+
+.word1 {
+    position: absolute;
+    left: 546px;
+    top: 365.5px;
 }
 
 .block {
