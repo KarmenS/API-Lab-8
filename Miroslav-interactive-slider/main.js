@@ -1,22 +1,20 @@
-const { styler, physics, easing, tween, composite } = window.popmotion;
+const { listen, styler, pointer, value, transform } = window.popmotion
+const { clamp } = transform
 
-const ball = document.querySelector(".box");
-const ballStyler = styler(ball);
+const handle = document.querySelector('.handle-hit-area')
+const handleStyler = styler(handle)
+const handleX = value(0, v => handleStyler.set('x', v))
 
-const polarToCartesian = ({ angle, radius }) => ({
-  x: radius * Math.cos(angle),
-  y: radius * Math.sin(angle)
-});
+// Single-axis pointer
+const pointerX = (x) => pointer({ x }).pipe(v => v.x)
 
-composite({
-  angle: physics({ velocity: 5 }),
-  radius: tween({
-    from: 50,
-    to: 150,
-    duration: 2000,
-    ease: easing.easeInOut,
-    yoyo: Infinity
+listen(handle, 'mousedown touchstart')
+  .start((e) => {
+    e.preventDefault();
+    pointerX(handleX.get())
+      .pipe(clamp(0, 250))
+      .start(handleX)
   })
-})
-  .pipe(polarToCartesian)
-  .start(ballStyler.set);
+
+listen(document, 'mouseup touchend')
+  .start(() => handleX.stop())
