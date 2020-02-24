@@ -5,7 +5,7 @@ body{
 .container {
     width: 265px;
     height: 320px;
-    background-color:grey;
+    background-color:palevioletred;
     border-radius: 25px;
     border: 2px solid black;
 
@@ -39,7 +39,6 @@ button{
     background-color: black;
     color: white;
     margin-left: 55px;
-
 }
 
 
