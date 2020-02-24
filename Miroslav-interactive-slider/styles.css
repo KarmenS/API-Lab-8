@@ -1,18 +1,61 @@
-#container {
-    width: 250px;
-    height: 200px;
-
-    background-color: whitesmoke;
+body {
+  --pink: #ff1c68;
+  --green: #14d790;
+  --blue: #198fe3;
+  --white: #fff;
+  --red: #ff1c1c;
+  --off-white: #ddd;
+  background: var(--white);
+  font-family: "Source Sans Pro", sans-serif;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-.rectangle {
-    width: 25px;
-    height: 25px;
-    position: relative;
-    
-    top: 85px;
-    left: 112px;
+.pen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 100%;
+}
 
-    background-color: lightseagreen;
+.slider {
+  width: 250px;
+  height: 100px;
+  position: relative;
+}
 
+.range {
+  border-radius: 3px;
+  height: 6px;
+  background: var(--off-white);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.handle-container {
+  position: absolute;
+  width: 40px + (10px * 2);
+  height: 40px + (10px * 2);
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.handle-hit-area {
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.handle {
+  background: var(--red);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }

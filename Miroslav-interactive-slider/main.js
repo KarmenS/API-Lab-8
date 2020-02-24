@@ -1,12 +1,20 @@
-//Same as: import {tween, styler} from 'popmotion'
-const { tween, styler } = window.popmotion;
+const { listen, styler, pointer, value, transform } = window.popmotion
+const { clamp } = transform
 
-const element = document.getElementsByClassName("rectangle")[0];
+const handle = document.querySelector('.handle-hit-area')
+const handleStyler = styler(handle)
+const handleX = value(0, v => handleStyler.set('x', v))
 
-const ball = styler(element); 
+// Single-axis pointer
+const pointerX = (x) => pointer({ x }).pipe(v => v.x)
 
-tween({to: 30, duration: 50 }).start(
-    function (value) { 
-        ball.set('x', value);
-    }
-    );
+listen(handle, 'mousedown touchstart')
+  .start((e) => {
+    e.preventDefault();
+    pointerX(handleX.get())
+      .pipe(clamp(0, 250))
+      .start(handleX)
+  })
+
+listen(document, 'mouseup touchend')
+  .start(() => handleX.stop())
