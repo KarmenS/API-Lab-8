@@ -7,7 +7,11 @@ const button1 = document.getElementsByClassName("button1")[0];
 const word = document.getElementsByClassName("word")[0];
 const word1 = document.getElementsByClassName("word1")[0];
 const h1 = document.getElementsByTagName("h1")[0];
+
+//more text at the bottom of the page
+/* 
 const text1 = document.getElementsByClassName("text1")[0];
+*/
 
 const buttonStyler = styler(button); 
 const buttonStyler1 = styler(button1); 
@@ -15,14 +19,17 @@ const rectangleStyler1 = styler(rectangle1);
 const wordStyler = styler(word);
 const wordStyler1 = styler(word1);
 const h1Styler = styler(h1);
-const textStyler1 = styler(text1)
+// const textStyler1 = styler(text1)
 
+// enlarging the bottom text on click
+/*
 function enlargeText() {
 spring({
   from: { x: 0, scale: 1 },
   to: { x: 60, scale: 1.2 },
 }).start(textStyler1.set)
 }
+*/
 
 //The word is static, shown upside-down, only the color is changing
 keyframes({
@@ -60,7 +67,7 @@ function wordToCorrectPosition() {
     wordRotate.stop(0)
   }
   
-  //
+  //delaying caling 
   setTimeout(stopRotation, 6000)
   
 }
