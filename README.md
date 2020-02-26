@@ -17,8 +17,8 @@ Repository with the code and other examples is found on: [https://github.com/kar
 
 ## Who maintains and contributes to the project
 Technical contributions: 
->Every Frame and Inertia - Abdulrahman
->Pointer and spring - Karin
->Constrain motion and spring-loaded characters - Miroslav
->Keyframes ( & Tween)  - Michaela
->Pointer tracking, tween & keyframes- Karmen
+*Every Frame and Inertia - Abdulrahman
+*Pointer and spring - Karin
+*Constrain motion and spring-loaded characters - Miroslav
+*Keyframes ( & Tween)  - Michaela
+*Pointer tracking, tween & keyframes- Karmen
