@@ -3,7 +3,6 @@ Interaction Design, Prototyping course, API lab, Group 8
 
 ## What the project does
 Popmotion is an advanced functional JavaScript animation library. Can be used also to make reactive animations. 
-
 The animations are created by animating DOM elements
 
 
@@ -12,7 +11,7 @@ Animation could be used to enhance interaction for example in sign-up flows and 
 
 
 ## How users can get started with the project
-The code needs the [Popmotion pure library](https://popmotion.io/learn/install/) in order to work as well as JavaScript environment.
+The code needs the [Popmotion pure library](https://popmotion.io/learn/install/) in order to work as well as a (any) JavaScript environment.
 Repository with the code and other examples is found on: [https://github.com/karinOllermark/API-Lab-8](https://github.com/karinOllermark/API-Lab-8)
 
 ## Who maintains and contributes to the project
