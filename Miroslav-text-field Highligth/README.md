@@ -8,10 +8,10 @@ Running the code gives an input field with a counter. The counter reacts to the 
 The project aims to showcase some potential uses for an input field and how the user can get notified that the username has reached minimum criteria. Further experimentation can be made by using the "spring"-function to make the counter more visible. 
 
 # How users can get started with the project
-The code needs the [Popmotion pure](https://popmotion.io/pure/) library in order to work. 
+The code needs the [Popmotion pure library](https://popmotion.io/pure/) in order to work. 
 
 # Where users can get help with your project
-Other than google as resource, Popmotion pure has a [learn](https://popmotion.io/learn/get-started/)section where technical aspects of the library are covered. There is also an [official community](https://spectrum.chat/popmotion/?tab=posts) where users can ask questions and contribute. 
+Other than google as resource, Popmotion pure has a [learn](https://popmotion.io/learn/get-started/) section where technical aspects of the library are covered. There is also an [official community](https://spectrum.chat/popmotion/?tab=posts) where users can ask questions and contribute. 
 
 # Who maintains and contributes to the project
 Miroslav Banusic made the example out of a existing example from the [website](https://popmotion.io/learn/spring-loaded-characters-remaining/). As of 28/2/2020 The example isn't being maintained anymore.
