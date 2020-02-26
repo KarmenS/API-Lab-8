@@ -25,7 +25,8 @@ const {
     })
   );
   
-  // new things
+
+ // carousel found in the documentation of popmotion
   
   const mix = calc.getValueFromProgress;
   
@@ -42,7 +43,9 @@ const {
     const tug = 0.2;
   
     const applyOverdrag = v => {
+       // location of the box is turned into a percentage value of the total bar times 10 to make the smile value greater
       let smilie = (v / max) * 100;
+        // if the smile value is within a specific range tweak the distance value which affects the ballstyler and therefore changes the mouth to happy/sad
       if (smilie < 60 && smilie > -20) distance = (v / max) * 100 - 20;
   
       if (v < 0) return mix(0, v, tug);
