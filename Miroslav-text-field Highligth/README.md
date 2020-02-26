@@ -15,5 +15,5 @@ Repository with the code and other examples is found on: [https://github.com/kar
 Other than google as resource, Popmotion pure has a [learn](https://popmotion.io/learn/get-started/) section where technical aspects of the library are covered. There is also an [official community](https://spectrum.chat/popmotion/?tab=posts) where users can ask questions and contribute with knowledge.
 
 # Who maintains and contributes to the project
-Miroslav Banusic made the example out of a existing template from the Popmotion website. [link](https://popmotion.io/learn/spring-loaded-characters-remaining/). As of 28/2/2020 The project isn't being maintained anymore.
+Miroslav made the example out of a existing template from the Popmotion website. [link](https://popmotion.io/learn/spring-loaded-characters-remaining/). As of 28/2/2020 The project isn't being maintained anymore.
 
