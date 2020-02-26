@@ -15,9 +15,7 @@ The code needs the [Popmotion pure library](https://popmotion.io/learn/install/)
 Repository with the code and other examples is found on: [https://github.com/karinOllermark/API-Lab-8](https://github.com/karinOllermark/API-Lab-8)
 
 Installation:
-> You can install Popmotion directly from npm:
-
-> npm install popmotion --save
+> You can install Popmotion directly from npm: npm install popmotion --save
 > Alternatively, you can also download pre-bundled files or fork. CodePen playgrounds. Full installation options are available on the [Install Popmotion](https://popmotion.io/learn/install/) page.
 
 
