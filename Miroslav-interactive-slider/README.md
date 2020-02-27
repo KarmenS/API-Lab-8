@@ -1,7 +1,7 @@
 # Example - interactive slider
 This is an example of an interactive slider. 
 
-The example is based on Constrained motion. https://popmotion.io/learn/constrain-motion/
+The example is based on Constrained motion. https://popmotion.io/learn/constrain-motion/  
 Within that field, the example page brings up two different functions to restrict range of motion: Hard clamp and spring back.
 
 
