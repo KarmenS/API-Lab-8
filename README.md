@@ -25,6 +25,6 @@ Contributors to the Github Popmotion library can be found here: https://github.c
 Technical contributions within our project: 
 * Every Frame, Inertia & Tween  - Abdulrahman
 * Pointer & spring - Karin
-* Constrain motion and spring-loaded characters - Miroslav
+* Constrain motion and spring-loaded characters/text-field - Miroslav
 * Keyframes & Tween - Michaela
 * Pointer tracking, tween & keyframes- Karmen
