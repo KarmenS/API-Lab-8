@@ -15,8 +15,8 @@ const ball2XY = value({ x: 50, y: 20 }, ball2Styler.set);
 
 listen(ball, 'mousedown touchstart')
   .start((e) => {
-    e.preventDefault();
-    pointer(ballXY.get()).start(ballXY);
+    pointer(ballXY.get())
+    .start(ballXY);
   });
 //ball 1
 listen(document, 'mouseup touchend')
@@ -32,8 +32,8 @@ listen(document, 'mouseup touchend')
 //ball 2
   listen(ball2, 'mousedown touchstart')
   .start((e) => {
-    e.preventDefault();
-    pointer(ball2XY.get()).start(ball2XY);
+    pointer(ball2XY.get())
+    .start(ball2XY);
   });
 
 listen(document, 'mouseup touchend')
