@@ -11,13 +11,12 @@ Our project is experimenting with some of the examples from Popmotion Pure (http
 Animation could be used to enhance interaction for example in sign-up flows and other gui elements. It can be used to make animations, interactive elements as well as just add a more interesting twist to the visual aspect of interfaces. It can serve as a feedforward for some functionalities. It can also offer a playful form of feedback after performing actions. 
 
 ## How users can get started with the project
-The code needs the [Popmotion pure library](https://popmotion.io/learn/install/) in order to work as well as a (any) JavaScript environment.
+The code needs the [Popmotion pure library](https://popmotion.io/learn/install/) in order to work, as well as a JavaScript editor.
 Repository with the code and other examples is found on: [https://github.com/karinOllermark/API-Lab-8](https://github.com/karinOllermark/API-Lab-8)
 
 Installation:
 > You can install Popmotion directly from npm: npm install popmotion --save  
 > Alternatively, you can also download pre-bundled files or fork. CodePen playgrounds. Full installation options are available on the [Install Popmotion](https://popmotion.io/learn/install/) page.
-
 
 
 ## Who maintains and contributes to the project
