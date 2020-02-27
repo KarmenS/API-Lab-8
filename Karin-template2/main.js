@@ -6,7 +6,7 @@ const ball = document.getElementsByClassName('ball')[0];
 const ball2 = document.getElementsByClassName('anotherBall')[0];
 const ball3 = document.getElementsByClassName('yetAnotherBall')[0];
 
-// set styler and value
+//set styler and value
 const ballStyler = styler(ball);
 const ball2Styler = styler(ball2);
 const ball3Styler = styler(ball3)
