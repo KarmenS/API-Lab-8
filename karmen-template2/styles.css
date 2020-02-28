@@ -17,8 +17,8 @@ body{
     height: 50px;
     position: relative;
     
-    top: 85px;
-    left: 112px;
+    top: 120px;
+    left: 225px;
 
     background-color:#5F7E6C;
 
@@ -31,8 +31,8 @@ body{
     height: 50px;
     position: relative;
     
-    top: 90px;
-    left: 112px;
+    top: 130px;
+    left: 225px;
 
     background-color: #88B59B;
 
@@ -44,34 +44,10 @@ body{
     height: 50px;
     position: relative;
     
-    top: 95px;
-    left: 112px;
+    top: 140px;
+    left: 225px;
 
     background-color:#A3D9B9;
 
-
-}
-
-.rectangle4 {
-    width: 50px;
-    height: 50px;
-    position: relative;
-    
-    top: 100px;
-    left: 112px;
-
-    background-color: #B0EBC8;
-
-}
-
-.rectangle5 {
-    width: 50px;
-    height: 50px;
-    position: relative;
-    
-    top: 105px;
-    left: 112px;
-
-    background-color: #BFFFDA;
 
 }

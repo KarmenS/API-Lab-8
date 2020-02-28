@@ -1,23 +1,23 @@
-//Same as: import {tween, styler} from 'popmotion'
-const { tween, styler, listen, pointer, value, decay, physics, spring } = window.popmotion;
+//Importing the animations
+const { styler, listen, pointer, value, decay, physics, spring } = window.popmotion;
 
-const rectangleContainer= document.getElementsByClassName("rectangleContainer")[0];
+//DOM elements
 
 const rectangle = document.getElementsByClassName("rectangle")[0];
 const rectangle2=document.getElementsByClassName("rectangle2")[0];
 const rectangle3=document.getElementsByClassName("rectangle3")[0];
-const rectangle4=document.getElementsByClassName("rectangle4")[0];
-const rectangle5=document.getElementsByClassName("rectangle5")[0];
 
+//adding styler 
 const rectangleStyler = styler(rectangle); 
 const rectangle2Styler = styler(rectangle2);
 const rectangle3Styler = styler(rectangle3);
-const rectangle4Styler = styler(rectangle4);
-const rectangle5Styler = styler(rectangle5);
 
 
 
+//creating a variable for pointer tracker
 let pointerTracker
+
+//function to start tracking the first object
 
 function startTrackingIt () {
  pointerTracker = pointer({
@@ -27,24 +27,24 @@ function startTrackingIt () {
 
 };
 
+
+//function to stop tracking the first object
+
 function stopTrackingIt() {
   if (pointerTracker) pointerTracker.stop();
 };
 
-listen(rectangle, 'mousedown touchstart').start(startTrackingIt);
-listen(rectangle, 'mouseup touchend').start(stopTrackingIt); 
-
-listen(rectangle2, 'mousedown touchstart').start(startTracking);
-listen(rectangle2, 'mouseup touchend').start(stopTracking); 
-
 
 const ballXY = value({ x: 0, y: 0 },rectangle2Styler.set);
+
+//function to start tracking the second object
 
 function startTracking() {
   pointer(ballXY.get())
     .start(ballXY);
 }
 
+//function to stop tracking the second object that adds velocity
 function stopTracking() {
   decay({
     from: ballXY.get(),
@@ -55,10 +55,14 @@ function stopTracking() {
 
 const ballArea = value({ x: 0, y: 0 }, rectangle3Styler.set);
 
+//function to start tracking the spring object
+
 function startTrackingTheSpring() {
   pointer(ballArea.get())
     .start(ballArea);
 }
+
+//function to sop tracking the spring object
 
 function stopTrackingTheSpring() {
   spring({
@@ -69,5 +73,13 @@ function stopTrackingTheSpring() {
   }).start(ballArea);
 }
 
+//Listeners
+
 listen(rectangle3, 'mousedown touchstart').start(startTrackingTheSpring);
 listen(rectangle3, 'mouseup touchend').start(stopTrackingTheSpring);
+
+listen(rectangle, 'mousedown touchstart').start(startTrackingIt);
+listen(rectangle, 'mouseup touchend').start(stopTrackingIt); 
+
+listen(rectangle2, 'mousedown touchstart').start(startTracking);
+listen(rectangle2, 'mouseup touchend').start(stopTracking); 
