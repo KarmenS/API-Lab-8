@@ -11,6 +11,7 @@ const counterStyler = styler(counter);
 const counterScale = value(1, counterStyler.set('scale'));
 const charLimit = parseInt(counter.innerHTML);
 
+//Function for the counter to make it "springy"
 const fireSpring = () => spring({
     from: counterScale.get(),
     to: 1,
@@ -40,10 +41,12 @@ const fireSpring = () => spring({
     counterStyler.set('color', convertCharCountToColor(charCount));
   };
   
+  //Listener for when user press down on key
   listen(input, 'keydown')
     .filter(({ target }) => target.value.length === charLimit)
     .start(fireSpring);
   
+    //Using pipe to pick up the latest value from the event before passing it
   listen(input, 'keyup')
     .pipe(({ target }) => target.value)
     .start(updateRemainingCharsCounter);

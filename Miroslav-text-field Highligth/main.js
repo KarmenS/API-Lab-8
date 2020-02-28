@@ -16,7 +16,7 @@ const counterScale = value(1, counterStyler.set('scale'));
 //Gets the input field's max length, 10
 const charLimit = parseInt(counter.innerHTML);
 
-//Function for the counter
+//Function for the counter to make it "springy"
 function fireSpring() {
   spring({
     // Start the animation from the current scale:
