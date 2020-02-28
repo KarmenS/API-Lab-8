@@ -4,11 +4,11 @@ const { styler, spring, listen} = window.popmotion;
 //get the elements from document
 const form = document.getElementsByClassName('container')[0];
 const button = document.getElementsByTagName('button')[0];
-const menu = document.getElementsByClassName('menu')[0];
+const headline = document.getElementsByClassName('menu')[0];
 
 //set styler
 const ImAForm = styler(form)
-const ImAMenu = styler(menu)
+const ImAHeadline = styler(headline)
 const ImAButton = styler(button)
 
 //makes the form slide in from the right side to the middle
@@ -27,7 +27,7 @@ spring({
     stiffness: { x: 20, y: 100 },
     damping: { x: 100, y: 100 }
 })
-.start(ImAMenu.set);
+.start(ImAHeadline.set);
 
 //add listener that reacts(gets bigger) to mouseover
 listen(button, 'mouseover')

@@ -6,11 +6,11 @@ const element = document.getElementsByClassName("box")[0];
 
 // set styler and value
 const divStyler = styler(element);
-const elementXY = value({ x: 0, y: 0 }, divStyler.set);
+const elementXY = value({ x: 50, y: 50 }, divStyler.set);
 
 //add a listener for mousedown 
-listen(element, 'mousedown touchstart')
-  .start((e) => {
+listen(element, 'mouseover')
+  .start(() => {
     pointer(elementXY.get())
     .start(elementXY);
   });
