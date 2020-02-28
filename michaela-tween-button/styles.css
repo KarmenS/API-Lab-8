@@ -1,22 +1,8 @@
 #container {
     width: 650px;
     height: 500px;
-
     background-color: rgb(245, 245, 245);
 }
-
-
-/*
-#test {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    border-radius: 50%;
-    background-color: red;
-    top: 60px;
-    left: 200px;
-}
-*/
 
 .button {
     top: 375px;
@@ -39,7 +25,6 @@
     left: 170px;
     width: 310px;
     height: 150px;
-    
 }
 
 .sentence{

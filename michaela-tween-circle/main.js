@@ -1,6 +1,7 @@
 //Same as: import {tween, styler} from 'popmotion'
 const { tween, styler, easing, reverse } = window.popmotion;
 
+//Getting the DOM elements
 const circle01 = document.getElementsByClassName("circle")[0];
 const circle02 = document.getElementsByClassName("circle")[1];
 const circle03 = document.getElementsByClassName("circle")[2];
@@ -14,6 +15,7 @@ const circle10 = document.getElementsByClassName("circle")[9];
 const circle11 = document.getElementsByClassName("circle")[10];
 const circle12 = document.getElementsByClassName("circle")[11];
 
+//Styling the DOM elements
 const circleStyler01 = styler(circle01); 
 const circleStyler02 = styler(circle02); 
 const circleStyler03 = styler(circle03); 
@@ -27,24 +29,20 @@ const circleStyler10 = styler(circle10);
 const circleStyler11 = styler(circle11); 
 const circleStyler12 = styler(circle12); 
 
+// * * * Animations of the circles with their specific positions * * *
 
-
+//width and height can also be changed in the tween if desired
 
 //for circle 1
-function firstTween() {tween({
+tween({
   from: { x: 0, y: 0, scale: 1 },
   to: { x: -245, y: 100,  scale: 2 },
   ease: easing.easeInOut,
   flip: Infinity,
   duration: 1500
 }).start(v => circleStyler01.set(v));
-}
-firstTween()
-
-
 
 //for circle 2
-//width can be changed in the tween
 tween({
   from: { x: 0, y: 0, scale: 1 },
   to: { x: -155, y: 130, scale: 2 },

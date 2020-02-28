@@ -1,7 +1,6 @@
 #container {
     width: 650px;
     height: 500px;
-
     background-color: whitesmoke;
 }
 
@@ -9,12 +8,9 @@
     width: 25px;
     height: 25px;
     position: absolute;
-    
     top: 85px;
     left: 112px;
-
     background-color: lightseagreen;
-
 }
 
 .circle {
@@ -24,6 +20,5 @@
     border-radius: 50%;
     top: 120px;
     left: 112px;
-
     background-color: aquamarine;
 }
