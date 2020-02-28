@@ -8,10 +8,6 @@ const word = document.getElementsByClassName("word")[0];
 const word1 = document.getElementsByClassName("word1")[0];
 const h1 = document.getElementsByTagName("h1")[0];
 
-//more text at the bottom of the page
-/* 
-const text1 = document.getElementsByClassName("text1")[0];
-*/
 
 const buttonStyler = styler(button); 
 const buttonStyler1 = styler(button1); 
@@ -19,17 +15,8 @@ const rectangleStyler1 = styler(rectangle1);
 const wordStyler = styler(word);
 const wordStyler1 = styler(word1);
 const h1Styler = styler(h1);
-// const textStyler1 = styler(text1)
 
-// enlarging the bottom text on click
-/*
-function enlargeText() {
-spring({
-  from: { x: 0, scale: 1 },
-  to: { x: 60, scale: 1.2 },
-}).start(textStyler1.set)
-}
-*/
+
 
 //The word is static, shown upside-down, only the color is changing
 keyframes({
@@ -67,31 +54,12 @@ function wordToCorrectPosition() {
     wordRotate.stop(0)
   }
   
-  //delaying caling 
+  //delaying calling 
   setTimeout(stopRotation, 6000)
   
 }
 
-/*
 
-function highlightHeading1 () {
-  keyframes({
-    values: [
-      { x: 0, color: '#FFCCEE', scale: 1 },
-      { x: 160, color: '#14D790', scale: 1.8 },
-      { x: 100, color: '#166E75', scale: 1.5 },
-      { x: 160, color: '#198FE3', scale: 1.8 },
-      { x: 0, color: '#FFCCEE', scale: 1 }
-    ],
-    duration: 6000,
-    easings: [easing.easeInOut, easing.easeInOut, easing.easeInOut, easing.easeInOut],
-    loop: 1,
-    //times: [0, 0.2, 0.5, 0.6, 1]
-  }).start({
-    complete: () => keyframes().start(v => h1Styler.set())
-  });
-}
-*/
 
 
 const heading1 = keyframes({
@@ -175,9 +143,6 @@ function moveWord() {
   setTimeout(stopMoving, 8000)
 }
 
-
-
-
 function returnWord () {
   wordPosition.resume(0)
 }
@@ -186,8 +151,8 @@ const controlRectangle1 = keyframes({
   values: [
     {  background: '#FFCCEE' },
     {  background: '#14D790' },
-    { background: '#DBFAF6' },
-    { background: '#198FE3' },
+    {  background: '#DBFAF6' },
+    {  background: '#198FE3' },
     {  background: '#FFCCEE' }
   ],
   duration: 6000,

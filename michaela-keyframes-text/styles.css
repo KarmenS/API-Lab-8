@@ -8,12 +8,9 @@ body {
     width: 240px;
     height: 230px;
     position: absolute;
-    
     top: 105px;
     left: 900px;
-
     background-color: #C2E9EC;
-
 }
 
 .rectangle1 {
@@ -63,14 +60,6 @@ h3 {
     position: absolute;
     left: 546px;
     top: 365.5px;
-}
-
-.text1 {
-    width: 600px;
-    position: absolute;
-    left: 100px;
-    top: 590px;
-    font-weight: 100;
 }
 
 .block {

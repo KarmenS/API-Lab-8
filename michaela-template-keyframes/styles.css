@@ -5,17 +5,7 @@
     background-color: whitesmoke;
 }
 
-.rectangle {
-    width: 60px;
-    height: 60px;
-    position: relative;
-    
-    top: 85px;
-    left: 112px;
 
-    background-color: lightseagreen;
-
-}
 
 .button {
     top: 375px;

@@ -1,16 +1,6 @@
 //Same as: import {tween, styler} from 'popmotion'
 const { tween, styler, easing, reverse } = window.popmotion;
 
-/*
-const test = document.getElementById("test");
-
-const style = getComputedStyle(test)
-
-console.log(style.top)
-*/
-
-const button = document.getElementsByClassName("button")[0];
-
 const circle01 = document.getElementsByClassName("circle")[0];
 const circle02 = document.getElementsByClassName("circle")[1];
 const circle03 = document.getElementsByClassName("circle")[2];
@@ -38,7 +28,7 @@ const circleStyler11 = styler(circle11);
 const circleStyler12 = styler(circle12); 
 
 
-function allTheTweens(){
+
 
 //for circle 1
 function firstTween() {tween({
@@ -51,25 +41,7 @@ function firstTween() {tween({
 }
 firstTween()
 
-//circle01.style.borderRadius = 60
 
-/* To stop the animation after 1500 ms
-
-setTimeout(stopTheAnimation, 1500);
-
-const playback = tween({
-  from: { x: 0, y: 0, scale: 1 },
-  to: { x: -245, y: 100,  scale: 2 },
-  ease: easing.easeInOut,
-  flip: Infinity,
-  duration: 1500
-}).start(v => circleStyler01.set(v));
-
-function stopTheAnimation() {
-  playback.stop(0.5)
-}
-
-*/
 
 //for circle 2
 //width can be changed in the tween
@@ -170,14 +142,7 @@ tween({
   flip: Infinity,
   duration: 1500
 }).start(v => circleStyler12.set(v));
-}
-
-//
 
 
-function animate (event) {
-  allTheTweens();
-  
-}
 
-button.addEventListener("click", animate)
+
